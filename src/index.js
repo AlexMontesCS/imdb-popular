@@ -108,7 +108,7 @@ async function getNumberOneLandscape(chartType) {
             primaryImage { url width height type }
             imageTypes {
               imageType { imageTypeId text }
-              images {
+              images(first: 50) {
                 edges {
                   node { url width height type }
                 }
